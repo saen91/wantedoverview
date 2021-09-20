@@ -9,6 +9,7 @@ add_breadcrumb("Gesucheübersicht", "wantedoverview.php");
 
 
 //GESUCHE SCHÜLERINNEN!
+//t.fid bitte mit der fid des Forums ersetzen
 $wanted_schoolw = $db->query ("
 	SELECT *
 	FROM mybb_threadfields_data td
@@ -18,7 +19,7 @@ $wanted_schoolw = $db->query ("
     on (t.uid = u.uid)
 	LEFT JOIN mybb_threadprefixes tp
 	on (tp.pid=t.prefix)
-	WHERE t.fid = 787
+	WHERE t.fid = 787 
 	AND t.visible = '1' 
 	");
 	
@@ -46,6 +47,7 @@ $wanted_schoolw = $db->query ("
 
 
 //GESUCHE WEIBLICH BIS 30!
+//t.fid bitte mit der fid des Forums ersetzen
 $wanted_w30 = $db->query ("
 	SELECT *
 	FROM mybb_threadfields_data td
@@ -83,6 +85,7 @@ $wanted_w30 = $db->query ("
 
 
 //GESUCHE WEIBLICH ÜBER 30!
+//t.fid bitte mit der fid des Forums ersetzen
 $wanted_wo30 = $db->query ("
 	SELECT *
 	FROM mybb_threadfields_data td
@@ -122,6 +125,7 @@ $wanted_wo30 = $db->query ("
 
 
 //GESUCHE SCHÜLER!
+//t.fid bitte mit der fid des Forums ersetzen
 $wanted_schoolm = $db->query ("
 	SELECT *
 	FROM mybb_threadfields_data td
@@ -159,6 +163,7 @@ $wanted_schoolm = $db->query ("
 
 
 //GESUCHE MÄNNLICH BIS 30!
+//t.fid bitte mit der fid des Forums ersetzen
 $wanted_m30 = $db->query ("
 	SELECT *
 	FROM mybb_threadfields_data td
@@ -196,6 +201,7 @@ $wanted_m30 = $db->query ("
 
 
 //GESUCHE MÄNNLICH ÜBER 30!
+//t.fid bitte mit der fid des Forums ersetzen
 $wanted_mo30 = $db->query ("
 	SELECT *
 	FROM mybb_threadfields_data td
@@ -233,6 +239,7 @@ $wanted_mo30 = $db->query ("
 
 
 //GESUCHE GRUPPEN!
+//t.fid bitte mit der fid des Forums ersetzen
 $wanted_group = $db->query ("
 	SELECT *
 	FROM mybb_threadfields_data td
@@ -269,6 +276,7 @@ $wanted_group = $db->query ("
 	}
 
 //GESUCHE DIVERS!
+//t.fid bitte mit der fid des Forums ersetzen
 $wanted_divers = $db->query ("
 	SELECT *
 	FROM mybb_threadfields_data td
@@ -305,6 +313,7 @@ $wanted_divers = $db->query ("
 	}
 
 //CANONS
+//t.fid bitte mit der fid des Forums ersetzen
 $wanted_canons = $db->query ("
 	SELECT *
 	FROM mybb_threadfields_data td
