@@ -1,0 +1,35 @@
+summary {
+	background: #dadada;
+    padding: 6px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 900;
+    font-size: 8px;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    color: #383836;
+}
+
+summary:focus {
+    outline: none;
+}
+
+//Anzeige der "Überschrift", wenn Kategorie nicht ausgeklappt ist.
+details > summary::marker { 
+    content:'+ ';
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+
+//Anzeige der "Überschrift", wenn Kategorie ausgeklappt ist.
+details[open] > summary::marker {
+    content:'- ';
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
